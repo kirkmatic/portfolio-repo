@@ -56,6 +56,7 @@ header {
     height: 560px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
 }
 #home-bg{
     margin-top: -87px;
@@ -77,49 +78,44 @@ header {
 
 .home-header h1 {
     font-size: 40px;
+    padding-right: 8px;
     color: #DECFEE;
     font-weight: bold;
 }
 /* About */
 
-/* spacer */
 .about-container{
+    width: auto;
+    height: 738px;
+    padding: 85px;
+}
+.about-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
     text-align: center;
+    gap: 62px; /* Adjust the space between items */
 }
-.about-tittle h1{
+
+.about-details h1{
     margin-left: auto;
     margin-right: auto;
-    font-size: 2em;
+    font-size: 48px;
+    font-weight: Extrabold;
+    text-align: left;
     color: #FFFFFF;
 }
-.about-content p{
-    font-size: 1.2em; 
+.about-details p{
+    margin-top: -24px;
+    font-size: 24px; 
     color: #fff;
-    text-align: center;
-    width: 80%;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
 }
-.about-content .spacer {
-    height: 5px;
-    width: 80%;
-    background: linear-gradient(to right, #FFFFFF, 
-    #9FDBE6, #7678BC, #CA8BF5);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-}
-.about-skills {
-    background-color: #4A465E;
-    padding: 40px;
-    width: 80%;
-    border-radius: 25px;
-}
+
+
 
 .skills-container{
     width: 70%;
