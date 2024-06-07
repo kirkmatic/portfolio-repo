@@ -1,80 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>My Portfolio</title>
 </head>
-<body>
+
+<body class="bg-gray-900 px-48">
     <!--Header-->
-    <header>
-        <div class="header-container">
+    <header class="sticky top-0 z-50 bg-gray-900">
+        <div class="flex justify-between items-center mx-auto py-5">
             <div class="header-logo">
-                <h1>Devfolio</h1>
+                <h1 class="text-4xl font-bold text-indigo-200">Devfolio</h1>
             </div>
             <div>
-                <ul class="header-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="">Contacts</a></li>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-2xl font-semibold text-indigo-200">Home</a></li>
+                    <li><a href="#about" class="text-2xl font-semibold text-indigo-200">About</a></li>
+                    <li><a href="#" class="text-2xl font-semibold text-indigo-200">Skills</a></li>
+                    <li><a href="#project" class="text-2xl font-semibold text-indigo-200">Projects</a></li>
+                    <li><a href="#" class="text-2xl font-semibold text-indigo-200">Contacts</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <!--Home-->
-    <section id="home">
-        <div class="home-container">
-            <div class="home-content">
-                <div class="home-header">
-                    <h1>Hi I'm Kirk J-Son Matic</h1>
-                    <img src="./images/Waving Hand Emoji.png">
-                </div>
-                <img src="./images/Home-BG.png" id ="home-bg">
+    <section id="home" class="flex justify-center items-center h-[560px] mb-6">
+        <div class="flex flex-col justify-center items-center text-center space-y-2">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-3xl font-bold text-indigo-200">Hi I'm Kirk J-Son Matic</h1>
+                <img src="./images/Waving Hand Emoji.png" class="w-10 h-10">
             </div>
+            <img src="./images/Home-BG.png" id="home-bg" class="mt-[-87px]">
         </div>
     </section>
     <!--About-->
-
-    <section id="about">
-        <div class="about-container">
-            <div class="about-content">
-                <div class="about-images">
-                    <img src="./images/Group 3.png" alt="">
-                </div>
-                <div class="about-details">
-                   <h1>About Me</h1>
-                   <P>Hey there! I'm Kirk J-Son R. Matic, a seasoned designer specializing in UI/UX, graphic design, frontend development, and web design. With 2 years of experience in freelancing, I'm passionate about crafting compelling digital experiences that blend form with function. Whether it's designing intuitive user interfaces, creating captivating visuals, coding responsive websites, or bridging the gap between design and development, I thrive on bringing ideas to life and exceeding expectations. Let's collaborate and transform your vision into reality!</P>
+    <section id="about" class="py-20">
+        <div class="flex flex-col items-center text-center space-y-8">
+            <div class="flex space-x-16">
+                <img src="./images/Group 3.png" alt="" class="w-1/2">
+                <div class="w-1/2 text-left space-y-4">
+                    <h1 class="text-4xl font-extrabold">About Me</h1>
+                    <p class="text-xl">Hey there! I'm Kirk J-Son R. Matic, a seasoned designer specializing in UI/UX, graphic design, frontend development, and web design. With 2 years of experience in freelancing, I'm passionate about crafting compelling digital experiences that blend form with function. Whether it's designing intuitive user interfaces, creating captivating visuals, coding responsive websites, or bridging the gap between design and development, I thrive on bringing ideas to life and exceeding expectations. Let's collaborate and transform your vision into reality!</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="project">
-        <div class="projects-container">
-            <div class="projects-tittle">
-                <h1>Projects and Designs</h1>
+    <!--Projects-->
+    <section id="project" class="py-20">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Projects and Designs</h1>
+        </div>
+        <div class="flex justify-center flex-wrap mt-10 space-x-6">
+            <div class="box w-72 h-80 mb-6 text-center bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4">
+                <img src="./images/PUJ.jpg" alt="" class="w-full h-full rounded-lg">
             </div>
-            <div class="project-content">
-                <div class="box">
-                    <img src="./images/PUJ.jpg" alt="">
-                </div>
-
-                <div class="box">
-                    <img src="./images/SNITCH.jpg" alt="">
-                </div>
-
-                <div class="box">
-                    <img src="./images/PUJ.jpg" alt="">
-                </div>
+            <div class="box w-72 h-80 mb-6 text-center bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4">
+                <img src="./images/SNITCH.jpg" alt="" class="w-full h-full rounded-lg">
+            </div>
+            <div class="box w-72 h-80 mb-6 text-center bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4">
+                <img src="./images/PUJ.jpg" alt="" class="w-full h-full rounded-lg">
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>
